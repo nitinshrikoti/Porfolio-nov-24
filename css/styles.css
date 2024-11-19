@@ -273,30 +273,6 @@ nav {
   width: 20px;
 }
 
-@media (min-width: 640px) {
-  nav {
-    top: 0;
-    height: 7vh;
-  }
-  .nav-list {
-    gap: 1rem;
-  }
-  .nav-list li {
-    font-size: var(--fs-xl);
-    line-height: var(--lh-xl);
-  }
-  .social-icons {
-    display: flex;
-    gap: 1em;
-  }
-}
-
-@media (min-width: 1200px) {
-  nav {
-    justify-content: space-evenly;
-  }
-}
-
 /* ------------------------------ Navigation end ------------------------------ */
 
 /* ------------------------------ Hero ------------------------------ */
@@ -364,76 +340,6 @@ nav {
 .icons {
   height: 15px;
   width: 15px;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 4rem;
-    margin-top: 1rem;
-  }
-  .format-1 {
-    font-size: var(--fs-3xl);
-    line-height: var(--lh-3xl);
-  }
-  .format-2 {
-    font-size: var(--fs-sm);
-    line-height: var(--lh-sm);
-  }
-  .format-3 {
-    font-size: var(--fs-xs);
-    line-height: var(--lh-xs);
-  }
-  .dp img {
-    height: 24rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    flex-direction: row;
-    margin-top: 4rem;
-  }
-  .hero > div {
-    width: 50%;
-  }
-  .format-1 {
-    font-size: var(--fs-5xl);
-    line-height: var(--lh-5xl);
-  }
-  .format-2 {
-    font-size: var(--fs-xl);
-    line-height: var(--lh-xl);
-  }
-  .format-3 {
-    font-size: var(--fs-base);
-    line-height: var(--lh-base);
-  }
-  .tech-stack img {
-    height: 30px;
-    width: 30px;
-  }
-  .tech-cont {
-    gap: 0.5rem;
-  }
-  .hero-content {
-    gap: 1rem;
-  }
-  .dp img {
-    height: 35rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .dp img {
-    height: 40rem;
-  }
-  .format-1 {
-    font-size: var(--fs-6xl);
-    line-height: var(--lh-6xl);
-  }
 }
 
 /* ------------------------------ Showcase ------------------------------ */
@@ -517,7 +423,58 @@ nav {
   margin-block: 0.5rem;
 }
 
+/* ------------------------------ Footer ------------------------------ */
+
+footer {
+  background-color: transparent;
+  padding-block: 1.2rem;
+  text-align: center;
+  color: #000;
+}
+
+/* ------------------------------ Media Queries ------------------------------ */
+
+@media (min-width: 640px) {
+  nav {
+    top: 0;
+    height: 7vh;
+  }
+  .nav-list {
+    gap: 1rem;
+  }
+  .nav-list li {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-xl);
+  }
+  .social-icons {
+    display: flex;
+    gap: 1em;
+  }
+}
+
 @media (min-width: 768px) {
+  .hero {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 4rem;
+    margin-top: 1rem;
+  }
+  .format-1 {
+    font-size: var(--fs-3xl);
+    line-height: var(--lh-3xl);
+  }
+  .format-2 {
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
+  }
+  .format-3 {
+    font-size: var(--fs-xs);
+    line-height: var(--lh-xs);
+  }
+  .dp img {
+    height: 24rem;
+  }
   .showcase > p {
     font-size: var(--fs-2xl);
     line-height: var(--lh-2xl);
@@ -526,6 +483,38 @@ nav {
 }
 
 @media (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    margin-top: 4rem;
+  }
+  .hero > div {
+    width: 50%;
+  }
+  .format-1 {
+    font-size: var(--fs-5xl);
+    line-height: var(--lh-5xl);
+  }
+  .format-2 {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-xl);
+  }
+  .format-3 {
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
+  .tech-stack img {
+    height: 30px;
+    width: 30px;
+  }
+  .tech-cont {
+    gap: 0.5rem;
+  }
+  .hero-content {
+    gap: 1rem;
+  }
+  .dp img {
+    height: 35rem;
+  }
   .showcase > p {
     font-size: var(--fs-3xl);
     line-height: var(--lh-3xl);
@@ -533,19 +522,23 @@ nav {
   }
 }
 
+@media (min-width: 1200px) {
+  nav {
+    justify-content: space-evenly;
+  }
+}
+
 @media (min-width: 1280px) {
+  .dp img {
+    height: 40rem;
+  }
+  .format-1 {
+    font-size: var(--fs-6xl);
+    line-height: var(--lh-6xl);
+  }
   .showcase > p {
     font-size: var(--fs-5xl);
     line-height: var(--lh-5xl);
     text-underline-offset: 15px;
   }
-}
-
-/* ------------------------------ Footer ------------------------------ */
-
-footer {
-  background-color: transparent;
-  padding-block: 1.2rem;
-  text-align: center;
-  color: #000;
 }
