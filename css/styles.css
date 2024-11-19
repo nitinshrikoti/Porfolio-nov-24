@@ -427,9 +427,11 @@ nav {
 
 footer {
   background-color: transparent;
-  padding-block: 1.2rem;
+  padding-block: 0.5rem;
   text-align: center;
   color: #000;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
 }
 
 /* ------------------------------ Media Queries ------------------------------ */
@@ -480,6 +482,11 @@ footer {
     line-height: var(--lh-2xl);
     text-underline-offset: 10px;
   }
+  footer {
+    padding-block: 1rem;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -519,6 +526,11 @@ footer {
     font-size: var(--fs-3xl);
     line-height: var(--lh-3xl);
     text-underline-offset: 12px;
+  }
+  footer {
+    padding-block: 1.2rem;
+    font-size: var(--fs-base);
+    line-height: var(--lh-base);
   }
 }
 
