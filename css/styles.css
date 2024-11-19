@@ -529,8 +529,6 @@ footer {
   }
   footer {
     padding-block: 1.2rem;
-    font-size: var(--fs-base);
-    line-height: var(--lh-base);
   }
 }
 
